@@ -28,9 +28,11 @@
     <!-- End Google Tag Manager -->
     <link rel="stylesheet" href="css/vendor.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
     <script type="text/javascript" src="js/timeline.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="full-screen" content="true" />
     <meta name="screen-orientation" content="portrait" />
@@ -79,7 +81,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="box-login f-right">
                         <div class="not-login d-flex">
 
-                            <a href="#" class="link-login c-link">#TTO</a>
+                            <a href="#" class="link-login c-link">
+                                <span style="font-family:monospace"> #TTO</span>
+                            </a>
 
                         </div>
                     </div>
@@ -119,7 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
 
         <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="left" scrollamount="12">
-            <span style="font-size:20px;color:blue">
+            <span style="font-size:20px;color:blue;">
                 Chào mừng bạn đến với Trang chủ Trí tuệ Olympus - Cùng nhau kết nối niềm đam mê Tri thức
             </span>
         </marquee>
@@ -162,7 +166,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="container">
                 <div class="list-game width-box m-auto"><br>
                     <div class="row">
-                        <center><strong><span style="font-size: 30px;color:black">BÀI VIẾT NỔI BẬT</span></strong></center><br>
+                        <div class="title">
+                            <center><strong><span style="font-size: 30px;color:black">BÀI VIẾT NỔI BẬT</span></strong></center><br>
+                        </div>
                     </div>
 
                     <div class="item-game b-color-page b-r-8">
@@ -269,7 +275,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <hr>
         <br>
         <div class="container">
-            <span style="font-size: 30px;color:black"><center>QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</center></span><br>
+            <div class="title">
+                <span style="font-size: 30px;color:black"><center>QUÁ TRÌNH HÌNH THÀNH VÀ PHÁT TRIỂN</center></span><br>
+            </div>
             <section class="timeline">
 
                 <ul>
@@ -301,6 +309,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </li>
                 </ul>
             </section>
+        </div>
+        <br>
+        <hr>
+
+        <div class="container">
+            <br>
+            <span style="font-size: 30px;color:black"><center>DANH SÁCH BẢNG ĐẤU ORAN GRAPE OLYMPUS</center></span><br>
+            <div class="row">
+                <div class="column">
+                    <img src="images/exam/A.png" alt="Bảng A" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/exam/B.png" alt="Bảng B" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/exam/C.png" alt="Bảng C" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/exam/D.png" alt="Bảng D" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/exam/E.png" alt="Bảng E" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/exam/F.png" alt="Bảng F" style="width:100%" onclick="myFunction(this);">
+                </div>
+            </div>
+
+            <div class="container-images">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%;height:500px">
+                <div id="imgtext"></div>
+            </div>
+
+
+
+
         </div>
         <br>
         <hr>
@@ -399,7 +444,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/vendor.js"></script>
-
+    <script type="text/javascript" src="js/custom.js"></script>
 
     <script>
         $(document).ready(function() {
