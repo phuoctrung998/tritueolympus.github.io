@@ -25,16 +25,13 @@
     <link rel="shortcut icon" href="images/tto.png" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" var_1="true" var_2="false" var_3="false" var_4="80" src="https://static1.fshare.vn/js/flies-obj-2.1.js?v=a5a98a85"></script>
 </head>
 
-<body class="page-main ">
+<body class="page-main">
 
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGB82FM"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
     <div class="wrapper">
         <div class="header bg-white box-shadow">
@@ -99,17 +96,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
             </div>
         </div>
-
-        <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="left" scrollamount="12">
+        <br>
+        <marquee bgcolor="antiquewhite" onmouseover="this.stop()" onmouseout="this.start()" direction="left" scrollamount="12">
             <span style="font-size:20px;color:blue;">
-                Chào mừng bạn đến với Trang chủ Trí tuệ Olympus - Cùng nhau kết nối niềm đam mê Tri thức
+                CHÀO MỪNG BẠN ĐẾN VỚI TRANG CHỦ TRÍ TUỆ OLYMPUS - CÙNG NHAU KẾT NỐI NIỀM ĐAM MÊ TRI THỨC
             </span>
         </marquee>
 
         <div class="list-event-recommended b-r-8 bg-white m-auto mt-box">
             <div class="container">
                 <div class="title-event-recommended f-tahomabold m-auto">
-                    Cuộc thi gần đây
+                    Sự kiện gần đây
                 </div>
                 <div class="main-event-recommended" style="background-image: url(images/bg1.png);">
                     <a target="blank" href="https://www.facebook.com/ttolympus/photos/a.1599337560098992/4361985523834168">
@@ -131,7 +128,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </div>
                     </a>
 
+
                 </div>
+
                 <div class="btn-more t-center b-radius-5 m-auto">
                     <a href="#" class="a100 c-link">Xem thêm</a>
                 </div>
@@ -414,6 +413,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
     </div>
+
     <div class="container" style="background-image: url(images/footer.jpg);">
         <div class="row">
             <footer class="page-footer">
@@ -429,102 +429,101 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                     </div><br>
                 </center>
-                <!-- Copyright -->
             </footer>
         </div>
     </div>
 
+</body>
+
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/vendor.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+        // read more giftcode
+        let list1 = $('.list-row1');
+        let list2 = $('.list-row2');
+
+        let heightList1 = list1.height();
+        let heightList2 = list2.height();
+
+        if (heightList1 > 200) {
+            list1.next(".show-more").fadeIn();
+            list1.addClass('more-description');
+        }
+        if (heightList2 > 200) {
+            list2.next(".show-more").fadeIn();
+            list2.addClass('more-description');
+        }
 
 
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript" src="js/vendor.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+        // List event recommended
+        $(".main-event-recommended").slick({
+            autoplay: false,
+            autoplaySpeed: 1000,
+            // speed: 10,
+            // centerPadding: '15px',
+            arrows: false,
+            mobileFirst: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            variableWidth: true,
+            responsive: [{
+                breakpoint: 374,
+                settings: {
+                    // slidesToShow: 5,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }, {
+                breakpoint: 768,
+                settings: {
+                    arrows: true,
+                    slidesToShow: 3,
+                    variableWidth: false,
+                }
+            }]
+        });
 
-    <script>
-        $(document).ready(function() {
-
-            // read more giftcode
-            let list1 = $('.list-row1');
-            let list2 = $('.list-row2');
-
-            let heightList1 = list1.height();
-            let heightList2 = list2.height();
-
-            if (heightList1 > 200) {
-                list1.next(".show-more").fadeIn();
-                list1.addClass('more-description');
-            }
-            if (heightList2 > 200) {
-                list2.next(".show-more").fadeIn();
-                list2.addClass('more-description');
-            }
-
-
-            // List event recommended
-            $(".main-event-recommended").slick({
-                autoplay: false,
-                autoplaySpeed: 1000,
-                // speed: 10,
-                // centerPadding: '15px',
-                arrows: false,
-                mobileFirst: true,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                variableWidth: true,
-                responsive: [{
-                    breakpoint: 374,
-                    settings: {
-                        // slidesToShow: 5,
-                    }
-                }, {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                }, {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: true,
-                        slidesToShow: 3,
-                        variableWidth: false,
-                    }
-                }]
-            });
-
-            // add icon arrow
-            $('.main-event-recommended .slick-next').html(`<span class="material-icons">
+        // add icon arrow
+        $('.main-event-recommended .slick-next').html(`<span class="material-icons">
             keyboard_arrow_right
             </span>`);
-            $('.main-event-recommended .slick-prev').html(`<span class="material-icons">
+        $('.main-event-recommended .slick-prev').html(`<span class="material-icons">
             keyboard_arrow_left
             </span>`);
 
-            // slide banner
-            $(".list-screenshot").slick({
-                autoplay: false,
-                autoplaySpeed: 1000,
-                // speed: 500,
-                arrows: false,
-                dots: false,
-                mobileFirst: true,
-                slidesToShow: 1,
-                variableWidth: true
-            })
+        // slide banner
+        $(".list-screenshot").slick({
+            autoplay: false,
+            autoplaySpeed: 1000,
+            // speed: 500,
+            arrows: false,
+            dots: false,
+            mobileFirst: true,
+            slidesToShow: 1,
+            variableWidth: true
+        })
 
-            // slide banner
-            $(".list-slide-banner").slick({
-                autoplay: true,
-                autoplaySpeed: 3000,
-                arrows: false,
-                dots: true,
-                mobileFirst: true,
-                slidesToShow: 1,
-            });
-
-
+        // slide banner
+        $(".list-slide-banner").slick({
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: false,
+            dots: true,
+            mobileFirst: true,
+            slidesToShow: 1,
         });
-    </script>
+
+
+    });
+</script>
 
 
 
