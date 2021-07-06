@@ -8,24 +8,7 @@
 
     <title>Trí Tuệ Olympus</title>
 
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KGB82FM');
-    </script>
-    <!-- End Google Tag Manager -->
+
     <link rel="stylesheet" href="css/vendor.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -42,16 +25,6 @@
     <link rel="shortcut icon" href="images/tto.png" />
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-
-    <script>
-        window.OneSignal = window.OneSignal || [];
-        OneSignal.push(function() {
-            OneSignal.init({
-                appId: "74ae0ca3-74bd-4e36-b1f0-db7b1b5bb6a2",
-                safari_web_id: "web.onesignal.auto.103c5ae1-79d5-4292-a45e-cec7ddd48c52",
-            });
-        });
-    </script>
 
 </head>
 
@@ -157,6 +130,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         </div>
                     </a>
+
                 </div>
                 <div class="btn-more t-center b-radius-5 m-auto">
                     <a href="#" class="a100 c-link">Xem thêm</a>
@@ -484,41 +458,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 list2.next(".show-more").fadeIn();
                 list2.addClass('more-description');
             }
-
-
-            /*==============================
-              Click hamburger mobile
-              ==============================*/
-            $('nav.head-menu').append('<div class="wrap-overlay"></div>');
-            $('.button-hamburger').click(function() {
-                $('.button-hamburger').toggleClass('active-button');
-                $('.head-menu-ul').toggleClass('menu-mobile-show');
-                $('.wrap-overlay').fadeToggle().click(function() {
-                    $('.button-hamburger').removeClass('active-button');
-                    $('.head-menu-ul').removeClass('menu-mobile-show');
-                    $(this).fadeOut(300);
-                });
-                $('.close-menu').click(function() {
-                    $('.button-hamburger').removeClass('active-button');
-                    $('.head-menu-ul').removeClass('menu-mobile-show');
-                    $('.wrap-overlay').fadeOut(300);
-                });
-            });
-
-            // click info login/logout
-
-            const $menu = $('.box-action-user');
-
-            $('.show-action').on('click', () => {
-                $menu.toggleClass('active');
-            });
-
-            $(document).on("click", function(event) {
-                var $trigger = $(".show-action");
-                if ($trigger !== event.target && !$trigger.has(event.target).length) {
-                    $menu.removeClass('active');
-                }
-            });
 
 
             // List event recommended
