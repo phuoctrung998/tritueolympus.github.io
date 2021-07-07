@@ -171,7 +171,7 @@ function getInputValue() {
                 }
 
 
-                document.getElementById("demo").innerHTML = name + " trả lời đúng " + count + " câu hỏi";
+                document.getElementById("demo").innerHTML = "Chúc mừng " + name + "!" + " Bạn trả lời đúng " + count + " câu hỏi";
             }
         }
     }

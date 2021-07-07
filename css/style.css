@@ -86,14 +86,15 @@
     line-height: 1.2;
     display: block;
     width: 400px;
-    margin-left: 120px;
+    margin-left: auto;
+    margin-right: auto;
     height: 45px;
     background: 0 0;
     padding: 10px 0;
     border-bottom: 2px solid rgba(255, 255, 255, .24)!important;
     border: 0;
     outline: 0;
-    text-align: center;
+    text-align: auto;
 }
 
 .form-tt input[type=text]::focus,
