@@ -978,7 +978,8 @@ ul.list-link-menu a {
 
 @media only screen and (min-width:768px) {
     .box-title-head {
-        margin-left: 15px
+        margin-left: 15px;
+        margin-top: 5px
     }
 }
 
@@ -994,7 +995,8 @@ ul.list-link-menu a {
 }
 
 .box-title-head .logo img {
-    width: 80px
+    width: 80px;
+    height: 110px
 }
 
 @media only screen and (min-width:768px) {
