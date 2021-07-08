@@ -228,5 +228,12 @@
             z-index: 2;
             width: 650px;
             height: 500px;
-            background-image: url("minigame/cnv2.png");
+            background-image: url("minigame/cnv1.png");
+        }
+        
+        #sta2 {
+            z-index: 2;
+            width: 650px;
+            height: 500px;
+            background-image: url("minigame/cnv2.jpg");
         }

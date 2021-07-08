@@ -28,6 +28,7 @@ function getInputValue() {
             if (confirm(" Chắc chắn rồi chứ ?")) {
                 if (confirm(" Không tiếc nha, OK ?")) {
 
+                    // disable box trả lời sau khi gửi
                     document.getElementById("q1").disabled = true;
                     document.getElementById("q2").disabled = true;
                     document.getElementById("q3").disabled = true;
@@ -50,156 +51,170 @@ function getInputValue() {
                     document.getElementById("q20").disabled = true;
 
                     switch (c1) {
-                        case 'putaleng':
-                        case 'Putaleng':
+                        case 'Đại Cồ Việt':
+                        case 'Đại cồ việt':
+                        case 'Đại Cồ việt':
+                        case 'đại cồ việt':
+                        case 'đại cồ Việt':
+
                             count++;
                             document.getElementById("kq1").style.color = "#66FF33";
                     }
                     switch (c2) {
-                        case '1946':
+                        case 'Rap Việt':
+                        case 'ráp Việt':
+                        case 'rap việt':
                             count++;
                             document.getElementById("kq2").style.color = "#66FF33";
                     }
                     switch (c3) {
-                        case 'rong biển':
-                        case 'Rong biển':
-                        case 'rong bien':
+                        case '1000':
                             count++;
                             document.getElementById("kq3").style.color = "#66FF33";
                     }
                     switch (c4) {
-                        case 'Tuyến giáp':
-                        case 'tuyến giáp':
-                        case 'giáp':
-                        case 'Giáp':
-                        case 'tuyen giap':
+                        case 'Hán':
+                        case 'hán':
+                        case 'chữ hán':
+                        case 'Chữ Hán':
+                        case 'Chữ hán':
                             count++;
                             document.getElementById("kq4").style.color = "#66FF33";
                     }
                     switch (c5) {
-                        case '1996':
+                        case 'Yershin':
+                        case 'yeshin':
+                        case 'yershin':
                             count++;
                             document.getElementById("kq5").style.color = "#66FF33";
                     }
                     switch (c6) {
-                        case 'Nhóm chức':
-                        case 'nhóm chức':
-                        case 'nhom chuc':
-                        case 'chức':
-                        case 'Chức':
+                        case 'Phân lưu':
+                        case 'phân lưu':
+                        case 'Chi lưu':
+                        case 'chi lưu':
                             count++;
                             document.getElementById("kq6").style.color = "#66FF33";
                     }
                     switch (c7) {
-                        case 'captcha':
-                        case 'capcha':
-                        case 'Captcha':
-                        case 'Capcha':
+                        case 'Ngô Quyền':
+                        case 'Ngô quyền':
+                        case 'ngô quyền':
+                        case 'Ngô Chúa':
                             count++;
                             document.getElementById("kq7").style.color = "#66FF33";
                     }
                     switch (c8) {
-                        case 'Chữ tượng hình':
-                        case 'chữ tượng hình':
-                        case 'tượng hình':
-                        case 'Tượng hình':
-                        case 'tuong hinh':
+                        case 'Truyện Kiều':
+                        case 'Truyện kiều':
+                        case 'truyện kiều':
                             count++;
                             document.getElementById("kq8").style.color = "#66FF33";
                     }
                     switch (c9) {
-                        case 'bền':
-                        case 'Bền':
-                        case 'ben':
+                        case 'Axit béo':
+                        case 'axit béo':
                             count++;
                             document.getElementById("kq9").style.color = "#66FF33";
                     }
                     switch (c10) {
-                        case 'Campuchia':
-                        case 'campuchia':
+                        case 'Bà Rịa-Vũng Tàu':
+                        case 'Bà Rịa Vũng Tàu':
+                        case 'Bà rịa-Vũng tàu':
                             count++;
                             document.getElementById("kq10").style.color = "#66FF33";
                     }
                     switch (c11) {
-                        case '11':
+                        case 'Comb':
+                        case 'comb':
                             count++;
                             document.getElementById("kq11").style.color = "#66FF33";
                     }
                     switch (c12) {
-                        case 'Quảng Ngãi':
-                        case 'Quang Ngai':
-                        case 'quảng ngãi':
-                        case 'quang ngai':
+                        case 'Nghịch':
+                        case 'nghịch':
+                        case 'tỉ lệ nghịch':
+                        case 'Tỉ lệ nghịch':
                             count++;
                             document.getElementById("kq12").style.color = "#66FF33";
                     }
                     switch (c13) {
-                        case 'Bão từ':
-                        case 'bão từ':
-                        case 'Bão điện từ':
-                        case 'bão điện từ':
-                        case 'bão địa từ':
-                        case 'Bão địa từ':
-                        case 'bao tu':
+                        case '2':
+                        case 'hai':
+                        case 'Hai':
                             count++;
                             document.getElementById("kq13").style.color = "#66FF33";
                     }
                     switch (c14) {
-                        case 'Thí nghiệm':
-                        case 'thí nghiệm':
-                        case 'thi nghiem':
+                        case 'Bóng chày':
+                        case 'bóng chày':
                             count++;
                             document.getElementById("kq14").style.color = "#66FF33";
                     }
                     switch (c15) {
-                        case 'Suất điện động':
-                        case 'suất điện động':
-                        case 'suat dien dong':
+                        case 'Lượm':
+                        case 'lượm':
+                        case 'chú Lượm':
+                        case 'chú lượm':
                             count++;
                             document.getElementById("kq15").style.color = "#66FF33";
                     }
                     switch (c16) {
-                        case 'Trần':
-                        case 'trần':
-                        case 'tran':
-                        case 'Nhà Trần':
-                        case 'nhà Trần':
-                        case 'nhà trần':
-                        case 'nha tran':
+                        case 'dạ dày':
+                        case 'bao tử':
+                        case 'Dạ dày':
                             count++;
                             document.getElementById("kq16").style.color = "#66FF33";
                     }
                     switch (c17) {
-                        case 'Cách mạng xanh':
-                        case 'cách mạng xanh':
-                        case 'cach mang xanh':
+                        case 'Đức':
+                        case 'đức':
                             count++;
                             document.getElementById("kq17").style.color = "#66FF33";
                     }
                     switch (c18) {
-                        case 'France':
-                        case 'france':
+                        case 'Chánh án':
+                        case 'chánh án':
+                        case 'Chánh Án':
                             count++;
                             document.getElementById("kq18").style.color = "#66FF33";
                     }
                     switch (c19) {
-                        case 'Silic':
-                        case 'silic':
-                        case 'si':
-                        case 'Si':
-                        case 'SI':
+                        case 'Buôn Ma Thuột':
+                        case 'Buôn Mê Thuột':
+                        case 'buôn ma thuột':
+                        case 'buôn mê thuột':
                             count++;
                             document.getElementById("kq19").style.color = "#66FF33";
                     }
                     switch (c20) {
-                        case 'Kim Liên':
-                        case 'Kim liên':
-                        case 'kim liên':
-                        case 'kim lien':
+                        case 'Đàn tranh':
+                        case 'đàn tranh':
+                        case 'Đàn Tranh':
                             count++;
                             document.getElementById("kq20").style.color = "#66FF33";
                     }
-
+                    //show kết quả
+                    document.getElementById("asw1").innerHTML = "Đại Cồ Việt";
+                    document.getElementById("asw2").innerHTML = "Rap Việt";
+                    document.getElementById("asw3").innerHTML = "1000";
+                    document.getElementById("asw4").innerHTML = "Hán";
+                    document.getElementById("asw5").innerHTML = "Yershin";
+                    document.getElementById("asw6").innerHTML = "Phân lưu";
+                    document.getElementById("asw7").innerHTML = "Ngô Quyền";
+                    document.getElementById("asw8").innerHTML = "Truyện Kiều";
+                    document.getElementById("asw9").innerHTML = "Axit béo";
+                    document.getElementById("asw10").innerHTML = "Bà Rịa-Vũng Tàu";
+                    document.getElementById("asw11").innerHTML = "Comb";
+                    document.getElementById("asw12").innerHTML = "Nghịch";
+                    document.getElementById("asw13").innerHTML = "2";
+                    document.getElementById("asw14").innerHTML = "Bóng chày";
+                    document.getElementById("asw15").innerHTML = "Lượm";
+                    document.getElementById("asw16").innerHTML = "Dạ dày";
+                    document.getElementById("asw17").innerHTML = "Đức";
+                    document.getElementById("asw18").innerHTML = "Chánh án";
+                    document.getElementById("asw19").innerHTML = "Buôn Ma Thuột";
+                    document.getElementById("asw20").innerHTML = "Đàn tranh";
 
                     document.getElementById("test1").innerHTML = "Chúc mừng " + name + "!" + " Bạn trả lời đúng " + count + " câu hỏi";
                 }
@@ -247,36 +262,31 @@ function getask() {
                     document.getElementById("aw3").disabled = true;
                     document.getElementById("aw4").disabled = true;
 
+
                     switch (cnv1) {
-                        case 'suez':
-                        case 'Suez':
-                        case 'xuy ê':
-                        case 'SUEZ':
+                        case 'tiền tệ':
+                        case 'Tiền tệ':
                             count++;
                             document.getElementById("ch1").style.color = "#66FF33";
                             $("#abs1").hide();
                     }
                     switch (cnv2) {
-                        case 'Ả rập':
-                        case 'Ả Rập':
-                        case 'ả rập':
+                        case '1885':
                             count++;
                             document.getElementById("ch2").style.color = "#66FF33";
                             $("#abs2").hide();
                     }
                     switch (cnv3) {
-                        case 'Châu á':
-                        case 'châu á':
-                        case 'Châu Á':
-                        case 'châu Á':
+                        case 'Việt Nam':
+                        case 'việt nam':
+                        case 'Việt nam':
                             count++;
                             document.getElementById("ch3").style.color = "#66FF33";
                             $("#abs3").hide();
                     }
                     switch (cnv4) {
-                        case 'Ấn Độ Dương':
-                        case 'Ấn độ dương':
-                        case 'ấn độ dương':
+                        case 'Pháp':
+                        case 'pháp':
 
                             count++;
                             document.getElementById("ch4").style.color = "#66FF33";
@@ -297,16 +307,16 @@ function getask() {
 function getall() {
     var allcnv = document.getElementById("challenge").value;
     var count = 0;
-    var result = "BIỂN ĐỎ";
+    var result = "ĐỒNG BẠC ĐÔNG DƯƠNG";
 
     if (confirm(" Xác nhận giải CNV, OK ?")) {
         if (confirm(" Chốt ?")) {
             document.getElementById("challenge").disabled = true;
             switch (allcnv) {
-                case 'Biển đỏ':
-                case 'biển đỏ':
-                case 'BIỂN ĐỎ':
-                case 'Biển Đỏ':
+                case 'đồng bạc đông dương':
+                case 'đồng bạc Đông Dương':
+                case 'Đồng bạc Đông Dương':
+                case 'Đồng bạc Đông dương':
                     count = count + 10;
                     document.getElementById("ch4").style.color = "#66FF33";
             }
