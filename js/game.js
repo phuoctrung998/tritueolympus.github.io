@@ -286,6 +286,7 @@ function getall() {
                 case 'Biển đỏ':
                 case 'biển đỏ':
                 case 'BIỂN ĐỎ':
+                case 'Biển Đỏ':
                     count = count + 10;
                     document.getElementById("ch4").style.color = "#66FF33";
             }
