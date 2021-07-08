@@ -219,7 +219,7 @@ function getask() {
 
     var count = 0;
     if (confirm("Bấm OK gửi kết quả luôn nè")) {
-        if (confirm("Đùa đấy, bạn chắc chứ")) {
+        if (confirm("Gửi xong nhớ xem hình gợi ý nhé !!")) {
             if (confirm(" Sai chính tả không vậy ?")) {
                 if (confirm(" Chốt, OK ?")) {
                     document.getElementById("aw1").disabled = true;
@@ -228,36 +228,43 @@ function getask() {
                     document.getElementById("aw4").disabled = true;
 
                     switch (cnv1) {
-                        case 'a':
-                        case 'A':
+                        case 'suez':
+                        case 'Suez':
+                        case 'xuy ê':
+                        case 'SUEZ':
                             count++;
                             document.getElementById("ch1").style.color = "#66FF33";
                             $("#abs1").hide();
                     }
                     switch (cnv2) {
-                        case 'B':
-                        case 'b':
+                        case 'Ả rập':
+                        case 'Ả Rập':
+                        case 'ả rập':
                             count++;
                             document.getElementById("ch2").style.color = "#66FF33";
                             $("#abs2").hide();
                     }
                     switch (cnv3) {
-                        case 'C':
-                        case 'c':
+                        case 'Châu á':
+                        case 'châu á':
+                        case 'Châu Á':
+                        case 'châu Á':
                             count++;
                             document.getElementById("ch3").style.color = "#66FF33";
                             $("#abs3").hide();
                     }
                     switch (cnv4) {
-                        case 'D':
-                        case 'd':
+                        case 'Ấn Độ Dương':
+                        case 'Ấn độ dương':
+                        case 'ấn độ dương':
+
                             count++;
                             document.getElementById("ch4").style.color = "#66FF33";
                             $("#abs4").hide();
                     }
 
 
-                    document.getElementById("test2").innerHTML = " Số điểm từ 4 hàng ngang gợi ý của bạn là " + count + " điểm";
+                    document.getElementById("test2").innerHTML = " Bạn đã trả lời đúng " + count + " hàng ngang";
 
 
 
@@ -270,21 +277,22 @@ function getask() {
 function getall() {
     var allcnv = document.getElementById("challenge").value;
     var count = 0;
-    var result = "ABCD";
+    var result = "BIỂN ĐỎ";
 
     if (confirm(" Xác nhận giải CNV, OK ?")) {
         if (confirm(" Chốt ?")) {
             document.getElementById("challenge").disabled = true;
             switch (allcnv) {
-                case 'ABCD':
-                case 'abcd':
+                case 'Biển đỏ':
+                case 'biển đỏ':
+                case 'BIỂN ĐỎ':
                     count = count + 10;
                     document.getElementById("ch4").style.color = "#66FF33";
             }
 
             if (count == 10) {
 
-                document.getElementById("test3").innerHTML = "Chúc mừng! CNV chính xác" + " Bạn đã giành thêm được " + count + " điểm";
+                document.getElementById("test3").innerHTML = "Chúc mừng! CNV chính xác! " + " Bạn đã giành thêm được " + count + " điểm";
             } else {
                 document.getElementById("test3").innerHTML = "Rất tiếc, CNV không chính xác. CNV cần tìm là " + result;
             }
